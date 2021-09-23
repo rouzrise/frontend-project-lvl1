@@ -1,0 +1,10 @@
+{
+    "name": "brain_games",
+    "version": "0.1.0",
+    "description": "A Brain games project",
+    "author": "<Rouzrise> <<rouzrise@gmail.com>>",
+    "type": "module",
+    "bin": {
+        "brain-games": "bin/brain-games.js"
+    }
+}
