@@ -5,4 +5,3 @@ import playBrainEven from '../src/brain-even-logic.js';
 
 const name = makeDialog();
 playBrainEven(name);
-
