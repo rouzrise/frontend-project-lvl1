@@ -5,7 +5,8 @@
     "author": "<Rouzrise> <<rouzrise@gmail.com>>",
     "type": "module",
     "bin": {
-        "brain-games": "bin/brain-games.js"
+        "brain-games": "bin/brain-games.js",
+        "brain-even": "bin/brain-even.js"
     },
     "dependencies": {
         "eslint": "^7.32.0",
