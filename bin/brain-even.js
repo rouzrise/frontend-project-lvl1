@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import makeDialog from '../src/cli.js';
-import playBrainEven from '../src/brain-even-logic.js';
+import initEvenGame from '../src/games/brain-even-game.js';
 
 const name = makeDialog();
-playBrainEven(name);
+initEvenGame(name);
