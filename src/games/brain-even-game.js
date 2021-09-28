@@ -26,8 +26,8 @@ function playEvenGame() {
   return checkAnswer(userAnswer, correctAnswer);
 }
 
-const initEvenGame = (name) => {
-  init(name, playEvenGame);
+const initEvenGame = () => {
+  init(playEvenGame);
 };
 
 export default initEvenGame;

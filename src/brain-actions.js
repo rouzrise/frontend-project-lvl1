@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import makeDialog from './cli.js';
 
 function onWrongAnswer(wrong, right) {
   console.log(`'${wrong}' is wrong answer ;(. Correct answer was '${right}'.`);
@@ -25,7 +26,8 @@ export function checkAnswer(userAnswer, correctAnswer) {
   } return onWrongAnswer(userAnswer, correctAnswer);
 }
 
-export function init(name, brainFunction) {
+export function init(brainFunction) {
+  const name = makeDialog();
   let count = 0;
   while (count < 3) {
     const res = brainFunction();
