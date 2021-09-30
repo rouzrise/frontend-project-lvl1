@@ -1,15 +1,10 @@
 import {
   askQuestion,
-  receiveAnswer,
   checkAnswer,
+  getRandomInt,
   init,
+  receiveAnswer,
 } from '../brain-actions.js';
-
-function getRandomInt(min, max) {
-  const minVal = Math.ceil(min);
-  const maxVal = Math.floor(max);
-  return Math.floor(Math.random() * (maxVal - minVal + 1)) + minVal;
-}
 
 function setTask() {
   const MIN_NUM = 1;

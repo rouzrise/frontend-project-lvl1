@@ -11,6 +11,12 @@ function onRightAnswer() {
   return true;
 }
 
+export function getRandomInt(min, max) {
+  const minVal = Math.ceil(min);
+  const maxVal = Math.floor(max);
+  return Math.floor(Math.random() * (maxVal - minVal + 1)) + minVal;
+}
+
 export function askQuestion(phrase, task) {
   console.log(phrase);
   console.log('Question', task);
