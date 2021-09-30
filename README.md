@@ -7,4 +7,4 @@
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
-[![brain-even](https://asciinema.org/a/jGeVfRPIcf4wrKqn27Uj4C5RK)](https://asciinema.org/a/jGeVfRPIcf4wrKqn27Uj4C5RK)
+[brain-even asciinema](https://asciinema.org/a/jGeVfRPIcf4wrKqn27Uj4C5RK)
