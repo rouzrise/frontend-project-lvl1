@@ -12,12 +12,16 @@ function setTask() {
   return getRandomInt(MIN_NUM, MAX_NUM);
 }
 
+function findCorrectAnswer(task) {
+  return task % 2 === 0 ? 'yes' : 'no';
+}
+
 function playEvenGame() {
   const task = setTask();
   const instruction = 'Answer "yes" if the number is even, otherwise answer "no"';
   askQuestion(instruction, task);
   const userAnswer = receiveAnswer();
-  const correctAnswer = task % 2 === 0 ? 'yes' : 'no';
+  const correctAnswer = findCorrectAnswer(task);
   return checkAnswer(userAnswer, correctAnswer);
 }
 

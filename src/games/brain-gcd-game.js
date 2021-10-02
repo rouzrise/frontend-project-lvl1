@@ -21,15 +21,19 @@ function gcd(a, b) {
   return gcd(b, a % b);
 }
 
+function findCorrectAnswer(numsString) {
+  const numsArr = numsString.split(' ');
+  const firstNum = parseInt(numsArr[0], 10);
+  const secondNum = parseInt(numsArr[1], 10);
+  return gcd(firstNum, secondNum);
+}
+
 function playGcdGame() {
   const task = setTask();
   const instruction = 'Find the greatest common divisor of given numbers.';
   askQuestion(instruction, task);
-  const userAnswer = receiveAnswer();
-  const numsArr = task.split(' ');
-  const firstNum = numsArr[0];
-  const secondNum = numsArr[1];
-  const correctAnswer = gcd(firstNum, secondNum).toString();
+  const userAnswer = parseInt(receiveAnswer(), 10);
+  const correctAnswer = findCorrectAnswer(task);
   return checkAnswer(userAnswer, correctAnswer);
 }
 

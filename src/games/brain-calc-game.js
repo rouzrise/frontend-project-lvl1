@@ -16,14 +16,18 @@ function setTask() {
   return `${firstNum}${operator}${secondNum}`;
 }
 
+function findCorrectAnswer(expressionString) {
+  /* eslint-disable no-eval */
+  return eval(expressionString);
+  /* eslint-enable no-eval */
+}
+
 function playCalcGame() {
   const task = setTask();
   const instruction = 'What is the result of the expression?';
   askQuestion(instruction, task);
-  const userAnswer = receiveAnswer();
-  /* eslint-disable no-eval */
-  const correctAnswer = eval(task).toString();
-  /* eslint-enable no-eval */
+  const userAnswer = parseInt(receiveAnswer(), 10);
+  const correctAnswer = findCorrectAnswer(task);
   return checkAnswer(userAnswer, correctAnswer);
 }
 
