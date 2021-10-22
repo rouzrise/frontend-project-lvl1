@@ -35,13 +35,14 @@ export function checkAnswer(userAnswer, correctAnswer) {
 export function init(brainFunction) {
   const name = makeDialog();
   let count = 0;
-  while (count < 3) {
+  const maxPlayCount = 3;
+  while (count < maxPlayCount) {
     const res = brainFunction();
     if (res) {
       count += 1;
     } else {
-      count = 0;
       console.log(`Let's try again, ${name}!`);
+      return;
     }
   }
   console.log(`Congratulations, ${name}!`);
