@@ -13,7 +13,7 @@ function setTask() {
   const firstNum = getRandomInt(MIN_NUM, MAX_NUM);
   const secondNum = getRandomInt(MIN_NUM, MAX_NUM);
   const operator = operatorArr[Math.floor(Math.random() * operatorArr.length)];
-  return `${firstNum}${operator}${secondNum}`;
+  return `${firstNum} ${operator} ${secondNum}`;
 }
 
 function findCorrectAnswer(expressionString) {
