@@ -19,7 +19,7 @@ export function getRandomInt(min, max) {
 
 export function askQuestion(phrase, task) {
   console.log(phrase);
-  console.log('Question', task);
+  console.log('Question: ', task);
 }
 
 export function receiveAnswer() {
