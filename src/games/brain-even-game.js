@@ -13,7 +13,8 @@ function setTask() {
 }
 
 function findCorrectAnswer(task) {
-  return task % 2 === 0 ? 'yes' : 'no';
+  const isEven = (num) => num % 2 === 0;
+  return isEven(task) ? 'yes' : 'no';
 }
 
 function playEvenGame() {
