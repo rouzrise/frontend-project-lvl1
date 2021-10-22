@@ -33,8 +33,8 @@ function playProgressionGame() {
   const instruction = 'What number is missing in the progression?';
   const elemIndex = getRandomInt(0, progression.length - 1);
   const hiddenProgressionElem = progression[elemIndex];
-  progression[elemIndex] = '?';
-  askQuestion(instruction, progression.join(', '));
+  progression[elemIndex] = '..';
+  askQuestion(instruction, progression.join(' '));
   const userAnswer = parseInt(receiveAnswer(), 10);
   return checkAnswer(userAnswer, hiddenProgressionElem);
 }
